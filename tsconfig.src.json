@@ -1,10 +1,16 @@
 {
   "extends": "./tsconfig.base.json",
-  "include": ["src"],
+  "include": [
+    "src"
+  ],
   "compilerOptions": {
-    "types": ["node"],
+    "types": [
+      "node"
+    ],
     "tsBuildInfoFile": ".tsbuildinfo/src.tsbuildinfo",
     "rootDir": "src",
-    "noEmit": true
+    "noEmit": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   }
 }
